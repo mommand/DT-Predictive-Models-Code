@@ -1,0 +1,92 @@
+{
+  "trial_id": "00",
+  "hyperparameters": {
+    "space": [
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "units_1",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 256,
+          "step": 32,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "dropout_1",
+          "default": 0.0,
+          "conditions": [],
+          "min_value": 0.0,
+          "max_value": 0.5,
+          "step": 0.1,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "units_2",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 256,
+          "step": 32,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "dropout_2",
+          "default": 0.0,
+          "conditions": [],
+          "min_value": 0.0,
+          "max_value": 0.5,
+          "step": 0.1,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "dense_units",
+          "default": null,
+          "conditions": [],
+          "min_value": 10,
+          "max_value": 100,
+          "step": 10,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "learning_rate",
+          "default": 0.0001,
+          "conditions": [],
+          "min_value": 0.0001,
+          "max_value": 0.01,
+          "step": null,
+          "sampling": "log"
+        }
+      }
+    ],
+    "values": {
+      "units_1": 96,
+      "dropout_1": 0.30000000000000004,
+      "units_2": 192,
+      "dropout_2": 0.1,
+      "dense_units": 70,
+      "learning_rate": 0.00022234349293441153
+    }
+  },
+  "metrics": { "metrics": {} },
+  "score": null,
+  "best_step": 0,
+  "status": "FAILED",
+  "message": "Traceback (most recent call last):\n  File \"E:\\chatbot-01\\python-backend\\venv\\lib\\site-packages\\keras_tuner\\src\\engine\\base_tuner.py\", line 274, in _try_run_and_update_trial\n    self._run_and_update_trial(trial, *fit_args, **fit_kwargs)\n  File \"E:\\chatbot-01\\python-backend\\venv\\lib\\site-packages\\keras_tuner\\src\\engine\\base_tuner.py\", line 265, in _run_and_update_trial\n    tuner_utils.convert_to_metrics_dict(\n  File \"E:\\chatbot-01\\python-backend\\venv\\lib\\site-packages\\keras_tuner\\src\\engine\\tuner_utils.py\", line 132, in convert_to_metrics_dict\n    [convert_to_metrics_dict(elem, objective) for elem in results]\n  File \"E:\\chatbot-01\\python-backend\\venv\\lib\\site-packages\\keras_tuner\\src\\engine\\tuner_utils.py\", line 132, in <listcomp>\n    [convert_to_metrics_dict(elem, objective) for elem in results]\n  File \"E:\\chatbot-01\\python-backend\\venv\\lib\\site-packages\\keras_tuner\\src\\engine\\tuner_utils.py\", line 145, in convert_to_metrics_dict\n    best_value, _ = _get_best_value_and_best_epoch_from_history(\n  File \"E:\\chatbot-01\\python-backend\\venv\\lib\\site-packages\\keras_tuner\\src\\engine\\tuner_utils.py\", line 116, in _get_best_value_and_best_epoch_from_history\n    objective_value = objective.get_value(metrics)\n  File \"E:\\chatbot-01\\python-backend\\venv\\lib\\site-packages\\keras_tuner\\src\\engine\\objective.py\", line 59, in get_value\n    return logs[self.name]\nKeyError: 'val_mean_absolute_error'\n"
+}

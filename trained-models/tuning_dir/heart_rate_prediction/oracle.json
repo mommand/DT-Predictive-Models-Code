@@ -1,0 +1,155 @@
+{
+  "ongoing_trials": {},
+  "hyperparameters": {
+    "space": [
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "units_1",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 256,
+          "step": 32,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "dropout_1",
+          "default": 0.0,
+          "conditions": [],
+          "min_value": 0.0,
+          "max_value": 0.5,
+          "step": 0.1,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "units_2",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 256,
+          "step": 32,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "dropout_2",
+          "default": 0.0,
+          "conditions": [],
+          "min_value": 0.0,
+          "max_value": 0.5,
+          "step": 0.1,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "dense_units",
+          "default": null,
+          "conditions": [],
+          "min_value": 10,
+          "max_value": 100,
+          "step": 10,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "learning_rate",
+          "default": 0.0001,
+          "conditions": [],
+          "min_value": 0.0001,
+          "max_value": 0.01,
+          "step": null,
+          "sampling": "log"
+        }
+      }
+    ],
+    "values": {
+      "units_1": 32,
+      "dropout_1": 0.0,
+      "units_2": 32,
+      "dropout_2": 0.0,
+      "dense_units": 10,
+      "learning_rate": 0.0001
+    }
+  },
+  "start_order": ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09"],
+  "end_order": ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09"],
+  "run_times": {
+    "00": 1,
+    "01": 1,
+    "02": 1,
+    "03": 1,
+    "04": 1,
+    "05": 1,
+    "06": 1,
+    "07": 1,
+    "08": 1,
+    "09": 1
+  },
+  "retry_queue": [],
+  "seed": 7357,
+  "seed_state": 7417,
+  "tried_so_far": [
+    "9a4004f80cecf0d9a374a3f67d3c71bd",
+    "a3877b3d67795dc2b13e109e89a63dab",
+    "ac626043847afe076f8bd0d57d0e0f15",
+    "29c1c91607786d8032d550c86a74c274",
+    "b16da2ee07a471acb0f7959bf1aa6104",
+    "3d2f0a27a7ccbc4910814223bf7f7904",
+    "5be3bb3164d31958817cdaa9bb4fc486",
+    "3a7bab863a4457ead4fc91f8f931512d",
+    "2d1f9e68b9a47176d6a90ca5be1ee903",
+    "64feeee32917964c09ea226fa0ddb18d"
+  ],
+  "id_to_hash": {
+    "00": "64feeee32917964c09ea226fa0ddb18d",
+    "01": "b16da2ee07a471acb0f7959bf1aa6104",
+    "02": "9a4004f80cecf0d9a374a3f67d3c71bd",
+    "03": "3d2f0a27a7ccbc4910814223bf7f7904",
+    "04": "5be3bb3164d31958817cdaa9bb4fc486",
+    "05": "ac626043847afe076f8bd0d57d0e0f15",
+    "06": "3a7bab863a4457ead4fc91f8f931512d",
+    "07": "a3877b3d67795dc2b13e109e89a63dab",
+    "08": "2d1f9e68b9a47176d6a90ca5be1ee903",
+    "09": "29c1c91607786d8032d550c86a74c274"
+  },
+  "display": {
+    "search_start": "2024-09-03T14:28:54.793330",
+    "trial_start": {
+      "00": "2024-09-03T14:28:54.793330",
+      "01": "2024-09-03T14:37:33.685539",
+      "02": "2024-09-03T14:45:45.407849",
+      "03": "2024-09-03T14:56:55.481764",
+      "04": "2024-09-03T15:04:29.272664",
+      "05": "2024-09-03T15:08:31.193299",
+      "06": "2024-09-03T15:19:55.624388",
+      "07": "2024-09-03T15:29:26.489120",
+      "08": "2024-09-03T15:36:32.573151",
+      "09": "2024-09-03T15:41:16.519992"
+    },
+    "trial_number": {
+      "00": 1,
+      "01": 2,
+      "02": 3,
+      "03": 4,
+      "04": 5,
+      "05": 6,
+      "06": 7,
+      "07": 8,
+      "08": 9,
+      "09": 10
+    }
+  }
+}

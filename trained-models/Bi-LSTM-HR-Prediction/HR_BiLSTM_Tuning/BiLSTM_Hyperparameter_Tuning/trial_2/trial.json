@@ -1,0 +1,104 @@
+{
+  "trial_id": "2",
+  "hyperparameters": {
+    "space": [
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "units_1",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 256,
+          "step": 32,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "dropout_1",
+          "default": 0.0,
+          "conditions": [],
+          "min_value": 0.0,
+          "max_value": 0.5,
+          "step": 0.1,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "units_2",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 256,
+          "step": 32,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Float",
+        "config": {
+          "name": "dropout_2",
+          "default": 0.0,
+          "conditions": [],
+          "min_value": 0.0,
+          "max_value": 0.5,
+          "step": 0.1,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Choice",
+        "config": {
+          "name": "learning_rate",
+          "default": 0.01,
+          "conditions": [],
+          "values": [0.01, 0.001, 0.0001],
+          "ordered": true
+        }
+      }
+    ],
+    "values": {
+      "units_1": 96,
+      "dropout_1": 0.1,
+      "units_2": 64,
+      "dropout_2": 0.2,
+      "learning_rate": 0.0001
+    }
+  },
+  "metrics": {
+    "metrics": {
+      "loss": {
+        "direction": "min",
+        "observations": [{ "value": [0.0005798061611130834], "step": 14 }]
+      },
+      "mean_absolute_error": {
+        "direction": "min",
+        "observations": [{ "value": [0.017375625669956207], "step": 14 }]
+      },
+      "mean_squared_error": {
+        "direction": "min",
+        "observations": [{ "value": [0.0005798061611130834], "step": 14 }]
+      },
+      "val_loss": {
+        "direction": "min",
+        "observations": [{ "value": [0.00015099908341653645], "step": 14 }]
+      },
+      "val_mean_absolute_error": {
+        "direction": "min",
+        "observations": [{ "value": [0.008391006849706173], "step": 14 }]
+      },
+      "val_mean_squared_error": {
+        "direction": "min",
+        "observations": [{ "value": [0.00015099908341653645], "step": 14 }]
+      }
+    }
+  },
+  "score": 0.00015099908341653645,
+  "best_step": 14,
+  "status": "COMPLETED",
+  "message": null
+}
